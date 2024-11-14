@@ -4,9 +4,7 @@ namespace GuessingGame
     {
         public int UserGuess { get; }
         public DateTime GuessTime { get; }
-        int UserGuessNumber;
-
-        List<Guess> guessesList = new List<Guess>();
+        
 
 
 
