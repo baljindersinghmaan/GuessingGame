@@ -2,3 +2,7 @@
 Console.WriteLine("Hello, World!");
 Random random = new Random();
 int randomNumber = random.Next(1, 101);
+
+do {
+
+} while (true);
