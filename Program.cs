@@ -18,6 +18,14 @@ do
         Console.WriteLine("Please enter a valid number.");
         continue;
     }
+    int previous = guessesList.FindIndex(g => g.UserGuess == userGuessNumber);
+    if (previous != -1)
+    {
+        int turnsAgo = guessesList.Count - previous;
+        Console.WriteLine($"You guessed this number {turnsAgo} turns ago!");
+    }
+
+
     guessesList.Add(new Guess(userGuessNumber));
 
     if (userGuessNumber > randomNumber)
@@ -28,14 +36,8 @@ do
     {
         Console.WriteLine("Your guessed number is low");
     }
-    
-
-
-
-
-
 
 
 } while (userGuessNumber != randomNumber);
 
-Console.WriteLine($"Congratulations! The number is {userGuessNumber}.");
+Console.WriteLine($"You won! The answer was {userGuessNumber}.");
