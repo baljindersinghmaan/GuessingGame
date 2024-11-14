@@ -17,7 +17,8 @@ do {
         Console.WriteLine("Please enter a valid number.");
         continue;
     }
-    
+    guessesList.Add(new Guess(userGuessNumber));
+
 
     
 
